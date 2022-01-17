@@ -2,6 +2,7 @@ import React from "react";
 
 const TableCell = (props) => {
   return (
+
     
     <td className="grid-cell"
       onMouseDown={props.mouseDown}
@@ -10,7 +11,7 @@ const TableCell = (props) => {
       onClick={props.changeToColor}
     >
     </td>
-   
+    
   );
 }
 

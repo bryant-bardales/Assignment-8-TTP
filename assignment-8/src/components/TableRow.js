@@ -3,11 +3,12 @@ import TableCell from "./TableCell.js";
 
 const TableRow = (props) => {
   let tableCells = [];
+  let cells = 0;
 
   for (let i = 0; i < props.numColumns; i++) {
     tableCells.push(
       <TableCell
-        key={props.index}      
+        key={cells++}      
         mouseDown={props.mouseDown}
         mouseUp={props.mouseUp}
         mouseEnter={props.mouseEnter}

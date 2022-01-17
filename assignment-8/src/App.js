@@ -97,6 +97,7 @@ class App extends React.Component {
     for (let i = 0; i < this.state.rows; i++) {
       tableRows.push(
         <TableRow
+          key={this.state.rows}
           mouseDown={this.mouseDown}
           mouseUp={this.mouseUp}
           mouseEnter={this.mouseEnter}
@@ -140,7 +141,9 @@ class App extends React.Component {
           <span></span>
 
         <section>
-          <table className="grid">{tableRows}</table>
+          
+          <table className="grid"><tbody>{tableRows}</tbody></table>
+          
         </section>
         
       </div>
