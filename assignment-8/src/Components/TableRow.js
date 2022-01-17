@@ -12,7 +12,7 @@ class TableRow extends React.Component {
     }
     render() {
         return(
-            <tr>
+            <tr key = {5}>
                 {columns}
             </tr>
         )

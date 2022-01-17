@@ -17,7 +17,7 @@ class App extends React.Component {
         <div>
           <button class = "add">Add Row</button>
           <button class = "add">Add Column</button>
-          <button>Colors</button>
+          <button type = "dropdown">Colors</button>
         <Table state = {this.state}/>
         </div>
       )
