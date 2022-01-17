@@ -8,7 +8,7 @@ class Table extends React.Component {
             super(props)
             rows = []
             for (let i = 0; i < props.state.numRows; i++) {
-                rows.push(<TableRow key = {5} columns = {props.state.numColumns}/>)
+                rows.push(<TableRow columns = {props.state.numColumns}/>)
             }
         }
     render() {
