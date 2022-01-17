@@ -26,3 +26,6 @@ nav{
   border-collapse: collapse;
   padding: 30px;
 }
+table {
+  margin: auto;
+}
