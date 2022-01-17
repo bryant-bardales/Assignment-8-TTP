@@ -3,12 +3,12 @@ import TableCell from "./TableCell.js";
 
 const TableRow = (props) => {
   let tableCells = [];
-  let cells = 0;
+  //let cells = 0; Attempted to solve warnings in console, and it did, but messes with addRow() and removeRow()
 
   for (let i = 0; i < props.numColumns; i++) {
     tableCells.push(
       <TableCell
-        key={cells++}      
+        //key={cells++} Attempted to solve warnings in console, and it did, but messes with addRow() and removeRow()    
         mouseDown={props.mouseDown}
         mouseUp={props.mouseUp}
         mouseEnter={props.mouseEnter}

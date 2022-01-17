@@ -97,7 +97,7 @@ class App extends React.Component {
     for (let i = 0; i < this.state.rows; i++) {
       tableRows.push(
         <TableRow
-          key={this.state.rows}
+          //key={this.state.rows} Attempted to solve warnings in console, and it did, but messes with addRow() and removeRow()
           mouseDown={this.mouseDown}
           mouseUp={this.mouseUp}
           mouseEnter={this.mouseEnter}
