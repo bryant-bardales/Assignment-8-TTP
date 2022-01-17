@@ -3,12 +3,11 @@ import Table from './Table'
 import '../index.css'
 
 class App extends React.Component {
-
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
     this.state = {
-      rows: 1,
-      columns: 1,
+      numRows: 1,
+      numColumns: 1,
       color: ""
     }
   }
